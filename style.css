@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'Norse-Bold';
+	src: url('Norse-Bold.otf') format('opentype');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: row;	
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left {
+	width: 35vw;
+	background-color: yellow;
+	background-image: url('background-left.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.box {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	/* left: 0; */
+	height: 15vh;
+	/* width: 100%; */
+	background-color: rgb(0, 0, 0, 0.5);
+	margin-top: 18vh;
+}
+
+.lbox {
+	flex: 1;
+}
+
+.lbox img {
+	margin-left: 5vw;
+	margin-top: 1vh;
+	width: 90%;
+	height: 90%;
+	/* width: 45%; */
+	/* height: 45%; */
+	object-fit: contain;
+}
+
+.rbox {
+	flex: 1;
+	margin-top: 2vh;
+}
+
+.rbox h1 {
+	color: white;
+	font-size: 100px;
+	font-family: 'Norse-Bold', sans-serif;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 65vw;
+	background-color: red;
+}
+
+.one {
+	flex: 1;
+	background-color: #f9fafb;
+	height: 33vh;
+}
+
+.one h3 {
+	font-size: 24px;
+	margin-top: 16vh;
+	margin-left: 7vw;
+	margin-bottom: 8vw;
+	margin-right: 7vw;
+}
+
+.two {
+	flex: 1;
+	background-color: #ffffff;
+}
+
+.two h3 {
+	font-size: 24px;
+	margin-top: 2vh;
+	margin-left: 7vw;
+}
+
+.form-main-div {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+	margin-left: 7vw;
+	margin-top: 2vh;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+
+}
+
+input {
+    width: 15vw;
+    border: 1px solid #E5E7EB;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid rgb(0, 0, 255);
+    outline: none;
+}
+
+#error {
+    color: red;
+	/* border: 1px solid red; */
+    font-size: 10px;
+    margin: 1px;
+}
+
+input:invalid {
+    border: 1px solid red;
+    outline: none;
+}
+
+label {
+    font-size: 20px;
+    color: #575757;
+}
+
+.three {
+	flex: 1;
+	background-color: #f9fafb;
+}
